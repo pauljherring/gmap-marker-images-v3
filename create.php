@@ -178,5 +178,5 @@ $extended = [
 // convert spotlight-poi-dotless2.png -fill blue -fuzz 25% -draw 'color 14,14 replace' test.png
 foreach(array_merge($basic, $extended) as $color){
 	echo $color['name']."\n";
-	system("convert teardrop_template.png -fill '#".$color['hex']."' -draw 'color 14,14 replace' teardrop/".$color['name'].".png");
+	system("convert teardrop_template.png -fill '#".$color['hex']."' -draw 'color 14,14 replace' images/teardrop/".$color['name'].".png");
 }
